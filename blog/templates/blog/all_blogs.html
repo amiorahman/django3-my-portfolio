@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AR | Blog</title>
+</head>
+<body>
+    <h3>Welcome to Amio Rahman's blog!</h3>
+    <h4>I have written {{ Blogs.count }} blog{{ Blogs.count|pluralize }}</h4>
+
+    {% for blog in Blogs %}
+        <a href="{% url 'blog:detail' blog.id %}"><h3>{{ blog.title }}</h3><br></a>
+        {{ blog.description|striptags|truncatechars:10 }}<br>
+        {{ blog.date|date:'M d Y'|upper }}<br>
+    {% endfor %}
+</body>
+</html>
