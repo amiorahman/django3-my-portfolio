@@ -22,3 +22,18 @@ body {
         font-size: 5rem;
     }
 }
+
+<style>
+.imageContainer {
+  padding: 50px;
+  background-color: green;
+  transition: transform .5s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.imageContainer:hover {
+  transform: scale(1.15); /* (150% zoom)*/
+}
+</style>
