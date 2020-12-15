@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>AR | Blog</title>
-</head>
-<body>
+{% extends 'portfolios/bootstrap_navbar.html' %}
+
+{% block content %}
+
     <h3>Welcome to Amio Rahman's blog!</h3>
     <h4>I have written {{ Blogs.count }} blog{{ Blogs.count|pluralize }}</h4>
 
@@ -13,5 +10,5 @@
         {{ blog.description|striptags|truncatechars:10 }}<br>
         {{ blog.date|date:'M d Y'|upper }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
