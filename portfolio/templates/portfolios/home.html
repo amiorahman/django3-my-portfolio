@@ -3,21 +3,113 @@
 {% block content %}
 
     {% load static %}
+
+    <!-- Load Profile Image -->
     <div class="row justify-content-center my-3">
       <div class="col-5">
         <img src="{% static 'portfolio/Amio_Rahman.jpg' %}" class="img-fluid">
       </div>
     </div>
 
+
+    <!-- Main Text -->
     <div class="row justify-content-center mb-3">
       <div class="col-md-9 text-center">
         <h6 id="hometext" class="font-weight-bold">Master in Informatics | TUM | Technology Enthusiast | Constant Learner</h6>
       </div>
     </div>
 
-    <h2 class="mt-5">Skills</h2>
+
+    <!-- Skills and Progressbar -->
+    <div><h6>Python </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+    </div>
+    </br>
+
+    <div><h6>C# </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+    </div>
+    </br>
+
+    <div><h6>PL/SQL </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+    </div>
+    </br>
+
+    <div><h6>Kotlin for Android </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+    </div>
+    </br>
+
+    <div><h6>Tensorflow with Keras </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+    </div>
+    </br>
+
+    <div><h6>Django </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+    </div>
+    </br>
+
+    <div><h6>Oracle </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+    </div>
+    </br>
+
+    <div><h6>MongoDB </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+    </div>
+    </br>
+
+    <div><h6>Tableau </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+    </div>
+    </br>
+
+    <div><h6>Google Analytics and Tag Manager </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+    </div>
+    </br>
+
+    <div><h6>Google Dialogflow </h6></br></div>
+    <div class="progress" style="height: 6px">
+        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+    </div>
+    </br>
+
+
+    <!-- Secondary Text -->
+    <div class="row justify-content-center mb-3">
+      <div class="mt-5">
+        <h6 id="skilltext_1" class="font-weight-bold">Technology is evolving and so am I.</h6>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="mt-5">
+        <h6 id="skilltext_2" class="font-weight-bold">Working on improving my skillset and of course learning something new everyday.</h6>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="mt-5">
+        <h6 id="skilltext_3" class="font-weight-bold">Hopefully the progresses above will change soon ;)</h6>
+      </div>
+    </div>
+
+
+    <!-- Recent Projects from SQLite -->
+    <h2 class="mt-5">Recent Projects</h2>
     <hr>
-    <!--<div class="row">
+    <div class="row">
       {% for project in projects %}
       <div class="col-lg-4 col-md-6">
 
@@ -34,37 +126,6 @@
 
       </div>
       {% endfor %}
-    </div>-->
-
-    <div><h6>Python </h6></br></div>
-    <div class="progress" style="height: 6px">
-        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
     </div>
-    </br>
-
-    <div><h6>C# </h6></br></div>
-    <div class="progress" style="height: 6px">
-        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-    </div>
-    </br>
-
-    <div><h6>PL/SQL </h6></br></div>
-    <div class="progress" style="height: 6px">
-        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-    </div>
-    </br>
-
-    <div><h6>Kotlin for Android </h6></br></div>
-    <div class="progress" style="height: 6px">
-        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-    </div>
-    </br>
-
-    <div><h6>Django </h6></br></div>
-    <div class="progress" style="height: 6px">
-        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-    </div>
-    </br>
-
 
 {% endblock %}
