@@ -1,14 +1,22 @@
 {% extends 'portfolios/bootstrap_navbar.html' %}
 
+{% load static %}
+
 {% block content %}
 
-    <h3>Welcome to Amio Rahman's blog!</h3>
-    <h4>I have written {{ Blogs.count }} blog{{ Blogs.count|pluralize }}</h4>
+    <h3 id="myblog" class="font-weight-bold text-center">Welcome to Amio Rahman's blog!</h3>
+    <h4 class="text-center mb-5">I have written {{ Blogs.count }} blog{{ Blogs.count|pluralize }}</h4>
+    <h4 class="text-center mb-5">But never say never! :)</h4>
 
     {% for blog in Blogs %}
-        <a href="{% url 'blog:detail' blog.id %}"><h3>{{ blog.title }}</h3><br></a>
-        {{ blog.description|striptags|truncatechars:10 }}<br>
-        {{ blog.date|date:'M d Y'|upper }}<br>
+        <div class="col-md-10">
+            <a href="{% url 'blog:detail' blog.id %}">
+                <h3>{{ blog.title }}</h3><br>
+            </a>
+            {{ blog.description|striptags|truncatechars:10 }}<br>
+            {{ blog.date|date:'M d Y'|upper }}<br>
+        </div>
+
     {% endfor %}
 
 {% endblock %}

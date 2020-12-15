@@ -1,9 +1,11 @@
 {% extends 'portfolios/bootstrap_navbar.html' %}
 
+{% load static %}
+
 {% block content %}
 
-    <h1>-- {{ blog.title }} --</h1><br>
-    <h2>{{ blog.date|date:'M d Y'|upper }}</h2><br>
+    <h2 class="text-center mt-5" id="blogdetailtitle">-- {{ blog.title }} --</h2><br>
+    <h3 class="text-center text-muted mb-5">{{ blog.date|date:'M d Y'|upper }}</h3><br>
     <p>{{ blog.description|safe }}</p><br>
 
 {% endblock %}

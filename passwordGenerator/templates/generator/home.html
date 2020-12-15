@@ -1,0 +1,44 @@
+{% extends 'portfolios/bootstrap_navbar.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <h2 id="myblog" class="font-weight-bold text-center">Welcome to My Password Generator</h2><br>
+
+    <div class="font-weight-bold text-center">
+        <form action="{% url 'passwordGenerator:password_generated' %}" class="form-group">
+
+            <select name="length"> Password Length
+                <option value="8" selected="selected">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+            </select> Password Length
+            <br>
+            <br>
+
+            <input type="checkbox" name="uppercase"> Include Uppercase Character?
+            <br>
+            <br>
+
+            <input type="checkbox" name="numbers"> Include Numbers?
+            <br>
+            <br>
+
+            <input type="checkbox" name="special"> Include Special Characters?
+            <br>
+            <br>
+
+            <input type="submit" value="Generate Password" class="btn btn-primary">
+            <br>
+
+        </form>
+    </div>
+
+    <h3 class="font-weight-bold text-center">Don't worry! It's just on the browser. I don't have any database for this :D</h3><br>
+
+{% endblock %}
