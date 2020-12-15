@@ -1,0 +1,30 @@
+{% extends 'portfolios/bootstrap_navbar.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <h3 id="myblog" class="font-weight-bold text-center">Welcome to Amio Rahman's Travel Diary!</h3><br>
+    <h4 class="text-center mb-5">Because I am an Informatiker by heart, traveller by passion :)</h4><br><br>
+    <!-- Recent Projects from SQLite -->
+    <h2 class="mt-5">A Few Recent Captures</h2>
+    <hr>
+    <div class="row">
+      {% for picture in pictures %}
+      <div class="col-lg-4 col-md-6">
+
+        {% if picture.url %}
+        <a href="{{ picture.url }}">
+          <img src="{{ picture.image.url }}" class="img-fluid mb-2">
+        </a>
+        {% else %}
+        <img src="{{ picture.image.url }}" class="img-fluid mb-2">
+        {% endif %}
+        <h3>{{ picture.title }}</h3>
+        <p>{{ picture.description }}</p>
+
+      </div>
+      {% endfor %}
+    </div>
+
+{% endblock %}
